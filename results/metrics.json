@@ -1,0 +1,15 @@
+{
+  "fid": 243.74023214571824,
+  "inception_score": 2.0304517342061894,
+  "is_10split_mean": 1.9822390794850597,
+  "is_10split_std": 0.08104340835162886,
+  "num_real": 624,
+  "num_generated": 624,
+  "seed": 31415,
+  "checkpoint_epoch": 40,
+  "test_total": 1694.001192533053,
+  "test_bce": 1667.754150390625,
+  "test_kl": 26.247027470515324,
+  "protocol": "torchvision Inception_V3_Weights.IMAGENET1K_V1; 2048 pool features; grayscale repeated RGB; 299 bilinear antialias; ImageNet normalization; transform_input=False",
+  "caveats": "Small held-out set; ImageNet domain mismatch; not clean-fid; split IS differs from full-set IS."
+}

@@ -1,0 +1,11 @@
+{
+  "model_checks": "passed: shape, finite backward gradients, zero-prior KL, deterministic reconstruction",
+  "checkpoint_roundtrip": "exact pixel match with fixed seed and deterministic CUDA",
+  "report_pages": 2,
+  "data_overlap": {
+    "train-val": 0,
+    "train-test": 0,
+    "val-test": 0
+  },
+  "epochs_completed": 40
+}

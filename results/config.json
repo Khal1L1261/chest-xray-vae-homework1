@@ -1,0 +1,16 @@
+{
+  "data": "work\\data",
+  "output": "outputs\\chest-xray-vae\\results",
+  "epochs": 40,
+  "batch_size": 64,
+  "latent_dim": 64,
+  "lr": 0.0002,
+  "seed": 42,
+  "device": "cuda",
+  "resume": false,
+  "torch": "2.10.0+cu126",
+  "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "parameters": 2168641,
+  "train_count": 5216,
+  "val_count": 16
+}
