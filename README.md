@@ -86,7 +86,6 @@ Recorded training and validation loops took approximately 57.5 seconds in total,
 | `evaluate.py` | Held-out FID, IS, and loss evaluation |
 | `generate.py` | Prior sampling from a saved checkpoint |
 | `test_model.py` | Shape, gradient, KL, and deterministic reconstruction checks |
-| `build_report.py` | Populate the LaTeX report from recorded metrics |
 | `results/history.csv` | Per-epoch training and validation measurements |
 | `results/config.json` | Hyperparameters and device information |
 | `results/metrics.json` | Held-out results and evaluation protocol |
@@ -94,25 +93,12 @@ Recorded training and validation loops took approximately 57.5 seconds in total,
 | `results/generated.png` | Prior samples |
 | `results/reconstructions.png` | Validation originals above posterior-mean reconstructions |
 | `results/loss_curves.png` | Negative ELBO, BCE, and KL curves |
-| `report/main.tex` and `report/main.pdf` | Report source and compiled two-page PDF |
+| `report/main.pdf` | Two-page report |
 
 GitHub includes source code, the report, and lightweight results. Dataset files and `.pt` checkpoints are excluded from Git. Training produces `results/best.pt` and `results/last.pt`; the complete local project ZIP also includes the recorded checkpoints.
-
-## Build the report
-
-After training and evaluation, regenerate the report from the result files:
-
-```powershell
-python build_report.py
-cd report
-tectonic main.tex
-```
-
-Alternatively, compile `main.tex` with `pdflatex`. The report uses the included `neurips_2024.sty`. Submit both the report and code to Gradescope according to the course's submission instructions.
 
 ## References
 
 - [Chest X-Ray Images (Pneumonia), Kaggle](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
 - [PyTorch-Ignite: GAN evaluation using FID and IS](https://pytorch-ignite.ai/blog/gan-evaluation-with-fid-and-is/)
 - [Kingma and Welling: Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114)
-- [NeurIPS 2024 style file source](https://github.com/NeurIPS-Creative-AI/2024/blob/main/assets/neurips_2024.sty)
